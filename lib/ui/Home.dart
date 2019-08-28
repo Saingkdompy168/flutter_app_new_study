@@ -13,7 +13,12 @@ class Home extends StatelessWidget {
     return new Scaffold(
         appBar: new AppBar(
           backgroundColor: Colors.cyanAccent,
-          title: new Text("Delivery App"),
+          centerTitle: true,
+          title: new Text("ដឹកជញ្ជូន", textAlign: TextAlign.center),
+          leading: new IconButton(
+            icon: new Icon(Icons.arrow_back_ios),
+            onPressed: () {},
+          ),
           actions: <Widget>[
             new IconButton(
                 icon: new Icon(Icons.add),

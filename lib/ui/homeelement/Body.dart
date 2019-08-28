@@ -8,11 +8,11 @@ class Body extends StatelessWidget {
       child: new Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
-          new Text("Hello world",
+          new Text("សួរស្ដី",
               style: new TextStyle(
                   fontSize: 15,
                   fontWeight: FontWeight.bold,
-                  color: Colors.deepOrange))
+                  color: Colors.deepOrange.shade800))
         ],
       ),
     );
