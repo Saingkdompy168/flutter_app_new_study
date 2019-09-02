@@ -11,8 +11,9 @@ class SecondChild extends StatelessWidget {
     // TODO: implement build
     return Scaffold(
       appBar: AppBar(
-        title: Text("Detail Page",
-            style: TextStyle(fontSize: 14.0, color: Colors.purple)),
+        centerTitle: true,
+        title: Text(data["name"]['first'].toString().toUpperCase(),
+            style: TextStyle(fontSize: 18.0, color: Colors.white)),
       ),
       body: Center(
         child: Container(

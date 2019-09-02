@@ -33,7 +33,7 @@ class _SampleAppPageState extends State<SampleAppPage> {
       Map<String, dynamic> map = jsonDecode(response.body);
       data = map["results"];
     });
-
+    return response.body;
 //    print(data[0]["location"]["city"]);
   }
 
@@ -51,7 +51,7 @@ class _SampleAppPageState extends State<SampleAppPage> {
           itemCount: data == null ? 0 : data.length,
           itemBuilder: (BuildContext context, i) {
             return ListTile(
-              title: Text(data[i]["name"]["first"]),
+              title: Text(data[i]["name"]["first"].toString().toUpperCase()),
               subtitle: Text(data[i]["phone"]),
               leading: CircleAvatar(
                 backgroundImage: NetworkImage(data[i]["picture"]["thumbnail"]),
