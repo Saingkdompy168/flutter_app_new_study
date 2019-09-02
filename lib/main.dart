@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 
-import 'ui/Home.dart';
+import 'HomeTap.dart';
 
 void main() {
-  runApp(new MaterialApp(
+  runApp(MaterialApp(
     title: "Scaffold",
-    home: new Home(),
+    home:HomeTap(),
   ));
 }
